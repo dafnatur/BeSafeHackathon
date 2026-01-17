@@ -1,35 +1,61 @@
-import {readDB, saveDB} from '../utils/databaseHelper.js';
+import { readDB, saveDB } from '../utils/databaseHelper.js';
+import { sendPurchaseEmail } from '../utils/mailer.js';
 
-// get the shop array from the database
-const getShopItems = (req, res) => {
+export const getShopItems = (req, res) => {
     const db = readDB();
-    res.status(200).json(db.shop || []);
+    res.json(db.shop || []); 
 };
 
-const purchaseItem = (req, res) => {
-    const { userID, itemID } = req.body;
+export const purchaseItem = (req, res) => {
+    const { userId, itemId } = req.body;
     const db = readDB();
 
-    //check for user and item in db
-    const user = db.users.find(u => u.id === parseInt(userID));
-    const item = db.shops.find(it => it.id === itemID);
-    //validate them
-    if(!user) return res.status(404).json({message: "User not found"});
-    if(!item) return res.status(404).json({message: "Item not found"});
-    //check if user has enough points
-    if(user.totalPoints < item.price){
-        return res.status(400).json({message: "Not enough points"});
+    // 1. Initialize variables FIRST
+    const user = db.users.find(u => u.id == userId);
+    const item = db.shop.find(i => i.id === itemId);
+  console.log("purchaseItem hit", req.body);
+
+    // 2. Validate existence immediately after initialization
+    if (!user || !item) {
+        console.log("Error: User or Item not found");
+        return res.status(404).json({ message: "User or Item not found" });
     }
 
-    //if successful, update
-    user.totalPoints-=item.price;
-    // maybe add tracking to an item? inventory?
-    
+    // 3. Log user email safely now that 'user' is initialized
+    console.log("Checking user email:", user.email); 
+
+    if (user.totalPoints < item.price) {
+        return res.status(400).json({ message: "Insufficient points" });
+    }
+
+    // 4. Update data
+    user.totalPoints -= item.price;
+    if (!user.purchaseHistory) user.purchaseHistory = [];
+
+    const purchaseRecord = {
+        purchaseId: Date.now(),
+        itemId: item.id,
+        itemName: item.name,
+        pricePaid: item.price,
+        date: new Date().toISOString()
+    };
+    user.purchaseHistory.push(purchaseRecord);
+        console.log("Attempting to send email to:", user.email);
+
+    // 5. Save to Database
     saveDB(db);
-    res.status(200).json({message: "Purchase successful"});
 
-};
+    // 6. Trigger Real Email
+    if (user.email) {
+        console.log("Attempting to send email to:", user.email);
+        // This runs in the background
+        sendPurchaseEmail(user.email, item.name, item.price);
+    }
 
-export {getShopItems,
-        purchaseItem
+    // 7. Send Response
+    res.json({ 
+        success: true, 
+        newBalance: user.totalPoints,
+        history: user.purchaseHistory 
+    });
 };

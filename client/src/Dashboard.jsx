@@ -1,127 +1,209 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router'; 
+import './styles/Dashboard.css';
 import TaskCard from "./components/TaskCard";
-import ScoreCenter from './components/ScoreCenter';
+import LogoutButton from "./components/LogoutButton";
+import MonthlyGoalBar from "./components/MonthlyGoalBar";
+import SafetyTipQuizModal from "./components/SafetyTipQuiz";
+import ReportModal from "./components/ReportModal";
+import FeedbackToast from "./components/FeedbackToast";
+import SimulationModal from "./components/SimulationModal";
+// Removed TopLeftStats import
 import api from './services/api';
+import SafetyPoints from './components/SafetyPoints';
 
 function Dashboard() {
+  const navigate = useNavigate(); 
+  
+  const [isLoading, setIsLoading] = useState(true);
+  const [isReportOpen, setIsReportOpen] = useState(false);
+  const [reportAction, setReportAction] = useState(null);
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
+  const [isSimOpen, setIsSimOpen] = useState(false);
+  const [feedback, setFeedback] = useState({ type: "success", message: "" });
+
   const [userData, setUserData] = useState({
-    username: '',
+    username: "",
     totalPoints: 0,
-    weeklyGoalStat: 0, // DAFNA - added this to track weekly goal status
-    stats: {
-      reportPost: 0,
-      safetyTips: 0,
-      reportGood: 0
-    }
+    streak: { current: 0 },
+    weeklyCounts: { reportPost: 0, safetyTips: 0, reportGood: 0, simulation: 0 },
+    weeklyTargets: { reportPost: 5, safetyTips: 5, reportGood: 5, simulation: 5 },
+    monthlyCounts: { reportPost: 0, safetyTips: 0, reportGood: 0, simulation: 0 },
+    monthlyTargets: { reportPost: 20, safetyTips: 20, reportGood: 20, simulation: 20 },
   });
 
-  const [isLoading, setIsLoading] = useState(true);
+  const loadSummary = async () => {
+    const userString = localStorage.getItem("besafe_user");
+    if (!userString) return;
+    
+    const user = JSON.parse(userString);
+    // Ensure we are passing a clean ID
+    const userId = user.id;
+
+    try {
+      const response = await api.get(`/reports/summary/${userId}`);
+      
+      // Validate that we actually got data
+      if (response.data) {
+        setUserData(response.data);
+      }
+    } catch (error) {
+      console.error("Dashboard Load Error:", error);
+      // Optional: if 401/403, redirect to login
+      if (error.response?.status === 404) {
+        console.warn("User session invalid, check localStorage");
+      }
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const userID = 1;
-        const response = await api.get(`/reports/summary/${userID}`);
-        setUserData(response.data);
-      } catch (error) {
-        console.error(error);
+        await loadSummary();
       } finally {
         setIsLoading(false);
       }
     };
-
     fetchData();
   }, []);
 
-  const handleUpdate = async (actionType) => {
+  const openReportModal = (action) => {
+    setReportAction(action);
+    setIsReportOpen(true);
+  };
+
+  const closeReportModal = () => {
+    setIsReportOpen(false);
+    setReportAction(null);
+  };
+
+  const openSafetyQuiz = () => setIsQuizOpen(true);
+  const closeSafetyQuiz = () => setIsQuizOpen(false);
+  const openSimulation = () => setIsSimOpen(true);
+  const closeSimulation = () => setIsSimOpen(false);
+
+  const submitReport = async ({ action, description, file }) => {
+    const user = JSON.parse(localStorage.getItem("besafe_user"));
+    const formData = new FormData();
+    formData.append("userId", user.id);
+    formData.append("action", action);
+    formData.append("description", description);
+    formData.append("image", file);
+    
     try {
-      const userID = 1;
-      const response = await api.post('/reports', {
-        userID: userID,
-        action: actionType,
-        description: `User performed ${actionType}`
+      // This triggers your validateReport logic on the backend/helper
+      await api.post("/reports", formData);
+      
+      await loadSummary();
+      setFeedback({ 
+        type: "success", 
+        message: "Report accepted! You've earned points." 
+      });
+      closeReportModal();
+    } catch (error) {
+      // Extract the specific AI fields you defined in validateReport
+      const serverData = error?.response?.data;
+      const informativeReason = serverData?.reason || "Invalid Submission.";
+
+      // Use a multi-line string or a formatted object for the toast
+      // This ensures the user sees the "Gibberish" reason clearly
+      setFeedback({ 
+        type: "error", 
+        message: informativeReason
       });
 
-      setUserData(prev => ({
-        ...prev,
-        totalPoints: response.data.newTotalPoints,
-        stats: response.data.newStats,
-        weeklyGoalStat: response.data.weeklyGoalCount //DAFNA - added progress
-      }));
-
-      if(response.data.goalReachedNow) { //DAFNA - added temp alert
-        alert("Weekly goal reached! +500 bonus points, keep it up");
-      }
-      
-    } catch (error) {
-      console.error(error);
+      // We do NOT close the modal so the user can see the reason and edit their text
     }
   };
 
-  if (isLoading) return <div style={{textAlign: 'center', marginTop: '50px'}}>Loading...</div>;
+  if (isLoading) return <div className="loading-state">Loading...</div>;
 
   return (
-    <div style={{ 
-      backgroundColor: '#f0f2f5', 
-      minHeight: '100vh', 
-      padding: '20px',
-      fontFamily: 'Arial, sans-serif'
-    }}>
-      
-      <h1 style={{ textAlign: 'center' }}>Hello, {userData.username}! 👋</h1>
-      <h4 style={{ textAlign: 'center' }}>Thanks for making the internet a safer place</h4>
-      
-      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <div className="dashboard-page">
+      <nav className="dashboard-nav">
+        <div className="user-welcome">
+          <h1>Hello, {userData.username}! 👋</h1>
+          <p>Thanks for making the internet a safer place.</p>
+        </div>
         
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '-20px' }}>
+        <div className="nav-controls">
+        {/* Refined Streak Badge */}
+        <div className="streak-badge">
+          <span className="fire-icon">🔥</span>
+          <span className="streak-value">{userData.streak?.current ?? 0}</span>
+        </div>
+
+      {/* Modern Shop Button (Coins) */}
+      <button className="points-shop-button" onClick={() => navigate("/shop")}>
+        <div className="points-icon-container">
+          <span className="bank-icon">🏛️</span>
+        </div>
+        <div className="points-label-container">
+          <span className="points-label">SAFETY POINTS</span>
+          {/* REPLACE THE OLD SPAN WITH THIS: */}
+          <SafetyPoints points={userData.totalPoints} />
+        </div>
+      </button>
+
+        <button className="profile-button" onClick={() => navigate("/profile")}>
+          <div className="profile-avatar">
+            {userData.username.charAt(0).toUpperCase()}
+          </div>
+        </button>
+
+          <LogoutButton />
+        </div>
+      </nav>
+
+      <FeedbackToast
+        type={feedback.type}
+        message={feedback.message}
+        onClose={() => setFeedback({ type: "success", message: "" })}
+      />
+
+      <main>
+        <div className="task-grid">
+          <TaskCard 
+            title="Simulation" 
+            score={userData.weeklyCounts.simulation || 0} 
+            total={userData.weeklyTargets?.simulation || 5} 
+            color="#7E57C2" 
+            onUpdate={openSimulation}
+          />
           <TaskCard 
             title="Report Post" 
-            score={userData.stats.reportPost || 0} 
-            total={50} 
+            score={userData.weeklyCounts.reportPost || 0} 
+            total={userData.weeklyTargets?.reportPost || 5} 
             color="#FF4D4D" 
-            onUpdate={() => handleUpdate('reportPost')} 
+            onUpdate={() => openReportModal("reportPost")}
           />
-        </div>
-
-        <div style={{ position: 'relative', zIndex: 10 }}> 
-          <ScoreCenter score={userData.totalPoints} />
-        </div>
-
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '-20px' }}>
-          
           <TaskCard 
             title="Safety Tips" 
-            score={userData.stats.safetyTips || 0} 
-            total={25} 
+            score={userData.weeklyCounts?.safetyTips || 0} 
+            total={userData.weeklyTargets?.safetyTips || 5} 
             color="#FF9F1C" 
-            onUpdate={() => handleUpdate('safetyTips')} 
+            onUpdate={openSafetyQuiz} 
           />
-          
           <TaskCard 
             title="Report Good" 
-            score={userData.stats.reportGood || 0} 
-            total={30} 
+            score={userData.weeklyCounts?.reportGood || 0} 
+            total={userData.weeklyTargets?.reportGood || 5} 
             color="#00C851" 
-            onUpdate={() => handleUpdate('reportGood')} 
+            onUpdate={() => openReportModal("reportGood")} 
           />
         </div>
 
-        
-        
-        <div style={{ marginTop: '30px', textAlign: 'center' }}>
-          <h3>Weekly Goal Progress: {userData.weeklyGoalStat} / 5</h3>
-          <div style={{ 
-            width: '100%', backgroundColor: '#ddd', borderRadius: '10px', height: '20px' 
-          }}> 
-            <div style={{ 
-              width: `${(userData.weeklyGoalStat / 5) * 100}%`, 
-              backgroundColor: '#00C851', height: '100%', borderRadius: '10px', transition: 'width 0.5s' 
-            }} />
-          </div>
-        </div>
-
-        <h4 style={{ textAlign: 'center', marginTop: '40px' }}>Keep Going!</h4>
-      </div>
+        <section className="monthly-progress-card">
+          <MonthlyGoalBar
+            monthlyCounts={userData.monthlyCounts}
+            monthlyTargets={userData.monthlyTargets}
+          />
+        </section>
+      </main>
+      
+      <ReportModal isOpen={isReportOpen} action={reportAction} onClose={closeReportModal} onSubmit={submitReport} />
+      <SafetyTipQuizModal isOpen={isQuizOpen} onClose={closeSafetyQuiz} onSuccess={loadSummary} />
+      <SimulationModal isOpen={isSimOpen} onClose={closeSimulation} onSuccess={loadSummary} />
     </div>
   );
 }

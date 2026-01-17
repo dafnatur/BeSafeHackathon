@@ -1,63 +1,82 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function TaskCard({ title, score, total, color, onUpdate }) {
-  const [currentScore, setCurrentScore] = useState(score);
-
-  const handleClick = () => {
-    if (currentScore < total) {
-      setCurrentScore(currentScore + 1);
-      if (onUpdate) {
-        onUpdate();
-      }
-    }
-  };
+  const reachedGoal = score >= total;
+  
+  // SVG Circle Calculations
+  const radius = 35;
+  const circumference = 2 * Math.PI * radius;
+  const percentage = total > 0 ? Math.min(100, (score / total) * 100) : 0;
+  const offset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div style={{ 
-      border: `2px solid ${color}`, 
-      padding: '20px', 
-      borderRadius: '15px',
-      textAlign: 'center',
-      margin: '10px',
-      backgroundColor: 'white',
-      width: '200px',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between'
-    }}>
+    
+    <div className={`task-card-v3 ${reachedGoal ? "is-completed" : ""}`}>
+      <div className="card-accent" style={{ backgroundColor: reachedGoal ? "#ccc" : color }} />
       
       <h3>{title}</h3>
-      
-      <div style={{ fontSize: '24px', fontWeight: 'bold', color: color, margin: '10px 0' }}>
-        {currentScore} / {total}
+
+      <div className="circular-progress">
+        <svg width="100" height="100">
+          {/* Background Gray Ring */}
+          <circle
+            cx="50"
+            cy="50"
+            r={radius}
+            stroke="#f0f0f0"
+            strokeWidth="6"
+            fill="transparent"
+          />
+          {/* Colored Progress Ring */}
+          <circle
+            cx="50"
+            cy="50"
+            r={radius}
+            stroke={color}
+            strokeWidth="6"
+            fill="transparent"
+            strokeDasharray={circumference}
+            strokeDashoffset={offset}
+            strokeLinecap="round"
+            transform="rotate(-90 50 50)"
+            style={{ transition: "stroke-dashoffset 0.5s ease" }}
+          />
+          {/* Text inside circle */}
+          <text x="50" y="48" textAnchor="middle" className="score-text">
+            {score}
+          </text>
+          <text x="50" y="65" textAnchor="middle" className="total-text">
+            / {total}
+          </text>
+        </svg>
       </div>
-      
-      <button 
-        onClick={handleClick}
-        style={{
-          padding: '10px 20px',
-          backgroundColor: color,
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-          fontSize: '16px',
-          fontWeight: 'bold'
-        }}
+
+      {reachedGoal && (
+        <div className="goal-badge">
+          <span className="check">✓</span> Goal reached
+        </div>
+      )}
+
+      <button
+        className="update-button"
+        /* Logic: Switch to grey if reachedGoal is true, otherwise use the prop color */
+        style={{ backgroundColor: reachedGoal ? "#cbd5e0" : color }}
+        onClick={() => onUpdate && onUpdate()}
+        /* This prevents the user from clicking the button when the goal is met */
+        disabled={reachedGoal}
       >
-        Update
-      </button>    
+        {reachedGoal ? "Goal Reached" : "Update"}
+      </button>
     </div>
   );
 }
 
 TaskCard.propTypes = {
-  title: PropTypes.string.isRequired, 
-  score: PropTypes.number.isRequired, 
-  total: PropTypes.number.isRequired, 
+  title: PropTypes.string.isRequired,
+  score: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
   color: PropTypes.string,
-  onUpdate: PropTypes.func           
+  onUpdate: PropTypes.func
 };
 
 export default TaskCard;

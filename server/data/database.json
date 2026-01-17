@@ -3,431 +3,988 @@
     {
       "id": 1,
       "username": "QueenB",
-      "email": "dafnatur@gmail.com",
-      "totalPoints": 5290,
-      "weeklyGoalCount": 0,
-      "achievedGoal": false,
-      "reportCounts": {
-        "reportPost": 30,
-        "safetyTips": 25,
-        "reportGood": 27,
-        "extra": 0
+      "email": "Dafnatur@gmail.com",
+      "totalPoints": 4280,
+      "weeklyCounts": {
+        "reportPost": 1,
+        "safetyTips": 1,
+        "reportGood": 2,
+        "simulation": 2
       },
-      "lastReportTime": "2026-01-05T08:59:27.910Z"
+      "monthlyCounts": {
+        "reportPost": 9,
+        "safetyTips": 20,
+        "reportGood": 11,
+        "simulation": 23
+      },
+      "weekKey": "2026-W03",
+      "achievedGoal": false,
+      "lastReportTime": "2026-01-12T16:01:06.090Z",
+      "monthKey": "2026-01",
+      "monthlyGoalAchieved": false,
+      "streak": {
+        "current": 3,
+        "best": 3,
+        "lastActiveDate": "2026-01-12"
+      },
+      "profile": {
+        "displayName": "QueenB",
+        "bio": "",
+        "avatarUrl": "",
+        "achievements": [],
+        "friends": [],
+        "privacy": {
+          "showStats": true
+        }
+      },
+      "purchaseHistory": [
+        {
+          "purchaseId": 1768159762782,
+          "itemId": "iPad_air",
+          "itemName": "iPad Air 5",
+          "pricePaid": 10,
+          "date": "2026-01-11T19:29:22.782Z"
+        }
+      ],
+      "hashedPassword": "$2b$10$XtZ4UO/GFv/ASiJ1KDsPpug9DaCucWlBNr4I7F.muF78WKxbGA7WG"
     },
     {
       "id": 2,
       "username": "userTest2",
-      "totalPoints": 1710,
-      "reportCounts": {
-        "reportPost": 8,
-        "safetyTips": 25,
-        "reportGood": 3,
-        "extra": 0
+      "email": "randomEmail@gmail.com",
+      "totalPoints": 2365,
+      "weeklyCounts": {
+        "reportPost": 6,
+        "safetyTips": 5,
+        "reportGood": 5,
+        "simulation": 8
       },
-      "lastReportTime": null,
-      "weeklyGoalCount": 0,
-      "achievedGoal": false
-    }
-  ],
-  "reports": [
-    {
-      "id": 1,
-      "userID": 1,
-      "action": "safetyTips",
-      "description": "Finished the Phishing module",
-      "pointsEarned": 50,
-      "timestamp": "2025-12-28T09:42:00.191Z"
-    },
-    {
-      "id": 2,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:10:01.595Z"
+      "monthlyCounts": {
+        "reportPost": 6,
+        "safetyTips": 5,
+        "reportGood": 5,
+        "simulation": 8
+      },
+      "weekKey": "2026-W02",
+      "achievedGoal": false,
+      "lastReportTime": "2026-01-09T15:30:00.842Z",
+      "monthKey": "2026-01",
+      "monthlyGoalAchieved": false,
+      "streak": {
+        "current": 2,
+        "best": 2,
+        "lastActiveDate": "2026-01-11"
+      },
+      "profile": {
+        "displayName": "user2",
+        "bio": "",
+        "avatarUrl": "",
+        "privacy": {
+          "showStats": true
+        },
+        "achievements": []
+      },
+      "purchaseHistory": [],
+      "hashedPassword": "$2b$10$rqtScM5k95mPCx8dpwUJUetdCsuzLd.uzbn9HmdacdaQiD.sXV2RS"
     },
     {
       "id": 3,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:16:09.022Z"
+      "username": "QueenB2",
+      "email": "someemail@gmail.com",
+      "totalPoints": 40,
+      "weeklyCounts": {
+        "reportPost": 0,
+        "safetyTips": 5,
+        "reportGood": 0,
+        "simulation": 0
+      },
+      "monthlyCounts": {
+        "reportPost": 0,
+        "safetyTips": 5,
+        "reportGood": 0,
+        "simulation": 0
+      },
+      "weekKey": "2026-W02",
+      "monthKey": "2026-01",
+      "achievedGoal": false,
+      "lastReportTime": "2026-01-11T20:11:01.024Z",
+      "monthlyGoalAchieved": false,
+      "streak": {
+        "current": 2,
+        "best": 2,
+        "lastActiveDate": "2026-01-11"
+      },
+      "profile": {
+        "displayName": "QueenB2",
+        "bio": "",
+        "avatarUrl": "",
+        "privacy": {
+          "showStats": true
+        },
+        "achievements": []
+      },
+      "purchaseHistory": [
+        {
+          "purchaseId": 1768162339445,
+          "itemId": "iPhone",
+          "itemName": "iPhone 17",
+          "pricePaid": 10,
+          "date": "2026-01-11T20:12:19.445Z"
+        }
+      ],
+      "hashedPassword": "$2b$10$0M8tTVYI6B4mk4egtcs/WOxy9UTlAk4/DiuiMnX8iwn7wfJMfUb0O"
     },
     {
       "id": 4,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:18:08.602Z"
+      "username": "adar",
+      "email": "abc@gmail.com",
+      "totalPoints": 10,
+      "weeklyCounts": {
+        "reportPost": 0,
+        "safetyTips": 1,
+        "reportGood": 1,
+        "simulation": 0
+      },
+      "monthlyCounts": {
+        "reportPost": 0,
+        "safetyTips": 1,
+        "reportGood": 1,
+        "simulation": 0
+      },
+      "weekKey": "2026-W02",
+      "monthKey": "2026-01",
+      "achievedGoal": false,
+      "lastReportTime": "2026-01-10T18:28:21.851Z",
+      "monthlyGoalAchieved": false,
+      "streak": {
+        "current": 1,
+        "best": 1,
+        "lastActiveDate": "2026-01-10"
+      },
+      "profile": {
+        "displayName": "QueenB2",
+        "bio": "",
+        "avatarUrl": "",
+        "privacy": {
+          "showStats": true
+        },
+        "achievements": []
+      },
+      "purchaseHistory": [],
+      "hashedPassword": "$2b$10$vX65bbXMcLJ6sqsfQd.ureKej0Wx28iod1YVe6jqdJGr6sB459GWq"
     },
     {
       "id": 5,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:18:17.391Z"
+      "username": "nanobanana",
+      "email": "asd@walla.com",
+      "totalPoints": 0,
+      "weeklyCounts": {
+        "reportPost": 0,
+        "safetyTips": 0,
+        "reportGood": 0,
+        "simulation": 0
+      },
+      "monthlyCounts": {
+        "reportPost": 0,
+        "safetyTips": 0,
+        "reportGood": 0,
+        "simulation": 0
+      },
+      "weekKey": "2026-W02",
+      "monthKey": "2026-01",
+      "achievedGoal": false,
+      "lastReportTime": null,
+      "monthlyGoalAchieved": false,
+      "streak": {
+        "current": 1,
+        "best": 1,
+        "lastActiveDate": "2026-01-11"
+      },
+      "profile": {
+        "displayName": "nanobanana",
+        "bio": "",
+        "avatarUrl": "",
+        "privacy": {
+          "showStats": true
+        },
+        "achievements": []
+      },
+      "purchaseHistory": [],
+      "hashedPassword": "$2b$10$Ye4ZRirq30G4d5xCku6hUupTU1.ES6DxZH81byYVvR8zzMyycdycK"
     },
     {
       "id": 6,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:18:21.398Z"
+      "username": "Dafna",
+      "hashedPassword": "$2b$10$2moUql1hAAZeNwvPEVQ4GuWmm9IibDCYQ1OkCz2ZYoTM0oZnOf0ra",
+      "email": "nonono@walla",
+      "totalPoints": 0,
+      "weeklyCounts": {
+        "reportPost": 0,
+        "safetyTips": 0,
+        "reportGood": 0,
+        "simulation": 0
+      },
+      "monthlyCounts": {
+        "reportPost": 0,
+        "safetyTips": 0,
+        "reportGood": 0,
+        "simulation": 0
+      },
+      "weekKey": "2026-W03",
+      "monthKey": "2026-01",
+      "achievedGoal": false,
+      "lastReportTime": null,
+      "monthlyGoalAchieved": false,
+      "streak": {
+        "current": 1,
+        "best": 1,
+        "lastActiveDate": "2026-01-12"
+      },
+      "profile": {
+        "displayName": "Dafna",
+        "bio": "",
+        "avatarUrl": "",
+        "achievements": [],
+        "friends": [],
+        "privacy": {
+          "showStats": true
+        }
+      }
+    }
+  ],
+  "safety-tips": [
+    {
+      "id": "tip1",
+      "title": "Check Your Privacy Settings",
+      "text": "Most social media and online platforms have privacy settings that control who can see your posts, contact you, or find your profile. Regularly review these settings and keep your profiles private. Only accept friend or follow requests from people you actually know. Be aware that even with privacy settings, anything you post online can potentially be shared or screenshotted.",
+      "quiz": {
+        "question": "What are privacy settings?",
+        "options": [
+          "A way to ensure YOU choose who can see your posts, contact you, or find your profile.",
+          "A way to emphasize we want privacy at this time.",
+          "A way to create a private chat with someone so no one can see our conversation."
+        ],
+        "correctAnswer": "A way to ensure YOU choose who can see your posts, contact you, or find your profile."
+      }
     },
     {
-      "id": 7,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:18:26.844Z"
+      "id": "tip2",
+      "title": "Protecting Your Private World",
+      "text": "Your digital footprint is made up of everything you post, and sometimes it shares more than you intend. To stay safe, avoid posting 'live' updates that show your current location, like a school logo, a street sign, or a geotagged photo of your favorite hangout. Wait until you've left the location to post about it! Also, keep your profiles private and regularly audit your 'Followers' list to ensure you actually know everyone who has access to your photos and stories.",
+      "quiz": {
+        "question": "What is the safest way to share a photo from your favorite local cafe?",
+        "options": [
+          "Tag the cafe's location live so friends can find you",
+          "Post the photo later after you have already left the cafe",
+          "Include the street address in your caption",
+          "Send it to a public group chat"
+        ],
+        "correctAnswer": "Post the photo later after you have already left the cafe"
+      }
     },
     {
-      "id": 8,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:18:43.114Z"
-    },
-    {
-      "id": 9,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:18:52.500Z"
-    },
-    {
-      "id": 10,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:31:00.719Z"
-    },
-    {
-      "id": 11,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:48:28.644Z"
-    },
-    {
-      "id": 12,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:48:32.992Z"
-    },
-    {
-      "id": 13,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:48:34.545Z"
-    },
-    {
-      "id": 14,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:48:34.612Z"
-    },
-    {
-      "id": 15,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:48:36.146Z"
-    },
-    {
-      "id": 16,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:48:45.489Z"
-    },
-    {
-      "id": 17,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:48:47.217Z"
-    },
-    {
-      "id": 18,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:48:47.524Z"
-    },
-    {
-      "id": 19,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:48:48.818Z"
-    },
-    {
-      "id": 20,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:48:48.859Z"
-    },
-    {
-      "id": 21,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:48:48.878Z"
-    },
-    {
-      "id": 22,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:01.611Z"
-    },
-    {
-      "id": 23,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:07.509Z"
-    },
-    {
-      "id": 24,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:09.621Z"
-    },
-    {
-      "id": 25,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:53:11.148Z"
-    },
-    {
-      "id": 26,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:11.566Z"
-    },
-    {
-      "id": 27,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:14.147Z"
-    },
-    {
-      "id": 28,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:16.119Z"
-    },
-    {
-      "id": 29,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:17.830Z"
-    },
-    {
-      "id": 30,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:53:29.995Z"
-    },
-    {
-      "id": 31,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:56:24.801Z"
-    },
-    {
-      "id": 32,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:57:09.222Z"
-    },
-    {
-      "id": 33,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:57:10.972Z"
-    },
-    {
-      "id": 34,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:57:12.565Z"
-    },
-    {
-      "id": 35,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:57:14.038Z"
-    },
-    {
-      "id": 36,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:58:06.527Z"
-    },
-    {
-      "id": 37,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:58:08.307Z"
-    },
-    {
-      "id": 38,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:58:09.939Z"
-    },
-    {
-      "id": 39,
-      "userID": 1,
-      "action": "reportGood",
-      "description": "User performed reportGood",
-      "pointsEarned": 20,
-      "timestamp": "2026-01-05T08:58:10.438Z"
-    },
-    {
-      "id": 40,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:18.700Z"
-    },
-    {
-      "id": 41,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:20.288Z"
-    },
-    {
-      "id": 42,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:21.827Z"
-    },
-    {
-      "id": 43,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:21.861Z"
-    },
-    {
-      "id": 44,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:22.440Z"
-    },
-    {
-      "id": 45,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:24.927Z"
-    },
-    {
-      "id": 46,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:26.453Z"
-    },
-    {
-      "id": 47,
-      "userID": 1,
-      "action": "reportPost",
-      "description": "User performed reportPost",
-      "pointsEarned": 50,
-      "timestamp": "2026-01-05T08:59:27.910Z"
+      "id": "tip3",
+      "title": "Protecting Your Self-Image",
+      "text": "TikTok and Instagram algorithms are designed to show you 'perfection,' but much of it is AI-enhanced or filtered. Constant scrolling can trick your brain into 'Upward Comparison'—making you feel like you aren't thin, pretty, or successful enough. To stay safe, 'Audit your Feed': if an account makes you feel bad about your body or life, unfollow or hit 'Not Interested.' Remember, filters like 'Bold Glamour' don't just add makeup; they digitally bone-structure your face into something physically impossible.",
+      "quiz": {
+        "question": "What is 'Upward Social Comparison' on social media?",
+        "options": [
+          "Comparing yourself to people you think are 'better' or 'prettier' than you",
+          "Sharing your photos with older relatives",
+          "Liking a celebrity's post to help them get more views",
+          "Updating your app to the newest version"
+        ],
+        "correctAnswer": "Comparing yourself to people you think are 'better' or 'prettier' than you"
+      }
     }
   ],
   "shop": [
     {
       "id": "iPad_air",
       "name": "iPad Air 5",
-      "price": 10000
+      "price": 10,
+      "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=470&hei=556&fmt=png-alpha&.v=1645065732688",
+      "tag": "Best for Students",
+      "type": "physical",
+      "inStock": true
     },
     {
       "id": "Garmin_Watch",
       "name": "Garmin Watch",
-      "price": 8000
+      "price": 80,
+      "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80",
+      "tag": null,
+      "type": "physical",
+      "inStock": true
     },
     {
-      "id": "Something_Cool",
-      "name": "Must Buy",
-      "price": 10000
+      "id": "iPhone",
+      "name": "iPhone 17",
+      "price": 10,
+      "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-black?wid=5120&hei=2880&fmt=p-jpg",
+      "tag": "New",
+      "type": "physical",
+      "inStock": true
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "fake_giveaway_01_youth",
+      "category": "scam",
+      "channel": "social_media",
+      "title": "You won a free iPhone!",
+      "startNodeId": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "message": "🎉 CONGRATS! You’ve been randomly selected to win a NEW iPhone! Just confirm in the next 10 minutes!",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Click the link to claim the prize",
+              "nextNodeId": "n2"
+            },
+            {
+              "id": "o2",
+              "text": "Check if the account is verified and ask a trusted adult",
+              "nextNodeId": "good_end"
+            },
+            {
+              "id": "o3",
+              "text": "Reply asking if it’s real",
+              "nextNodeId": "n2"
+            }
+          ],
+          "redFlagsHere": [
+            "Too good to be true",
+            "Urgent countdown",
+            "Unknown or unverified account"
+          ]
+        },
+        {
+          "id": "n2",
+          "message": "Almost there! Enter your address and phone number to receive your prize.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Enter the details to get the prize",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Close it, screenshot, block and report the account",
+              "nextNodeId": "good_end"
+            }
+          ],
+          "redFlagsHere": [
+            "Requests personal information",
+            "Pressure to act fast"
+          ]
+        }
+      ],
+      "endings": {
+        "good_end": {
+          "type": "safe",
+          "summary": "You spotted a fake giveaway and protected your personal information.",
+          "pointsReward": 25
+        },
+        "bad_end": {
+          "type": "unsafe",
+          "summary": "Scammers use fake prizes to collect personal info. Never share details for ‘free’ giveaways.",
+          "pointsReward": 5
+        }
+      }
     },
     {
-      "id": "Double_points",
-      "name": "Double your points",
-      "price": 20000
+      "id": "stranger_dm_01_youth",
+      "category": "online_safety",
+      "channel": "social_media",
+      "title": "Nice profile… how old are you?",
+      "startNodeId": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "message": "Hey 😊 you seem really cool and mature for your age. How old are you?",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Tell them your age",
+              "nextNodeId": "n2"
+            },
+            {
+              "id": "o2",
+              "text": "Don’t reply. Block and report the account",
+              "nextNodeId": "good_end"
+            },
+            {
+              "id": "o3",
+              "text": "Ask a trusted adult what to do",
+              "nextNodeId": "good_end"
+            }
+          ],
+          "redFlagsHere": [
+            "Stranger messaging",
+            "Commenting on age or maturity",
+            "Flattery"
+          ]
+        },
+        {
+          "id": "n2",
+          "message": "Wow 😏 you’re very grown up. Do you have Snapchat or WhatsApp?",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Give another app username",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Stop replying and block/report",
+              "nextNodeId": "good_end"
+            }
+          ],
+          "redFlagsHere": [
+            "Moving to private apps",
+            "Sexualized language",
+            "Ignoring boundaries"
+          ]
+        }
+      ],
+      "endings": {
+        "good_end": {
+          "type": "safe",
+          "summary": "You avoided engaging with a stranger and kept your private information safe.",
+          "pointsReward": 30
+        },
+        "bad_end": {
+          "type": "unsafe",
+          "summary": "Sharing personal details with strangers can lead to grooming or harassment.",
+          "pointsReward": 0
+        }
+      }
+    },
+    {
+      "id": "game_trade_01_youth",
+      "category": "scam",
+      "channel": "gaming_chat",
+      "title": "Free game items!",
+      "startNodeId": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "message": "I can give you free Robux/skins. Just log in here so I can send it.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Click the link and log in",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Check the official game rules and ask a trusted adult",
+              "nextNodeId": "good_end"
+            },
+            {
+              "id": "o3",
+              "text": "Reply asking how it works",
+              "nextNodeId": "n2"
+            }
+          ],
+          "redFlagsHere": [
+            "Free items offer",
+            "Login outside official site",
+            "Unknown player"
+          ]
+        },
+        {
+          "id": "n2",
+          "message": "It’s safe, everyone does it. Hurry before the offer expires!",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Log in quickly",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Block/report the user and don’t click anything",
+              "nextNodeId": "good_end"
+            }
+          ],
+          "redFlagsHere": [
+            "Pressure",
+            "Trying to normalize risky behavior"
+          ]
+        }
+      ],
+      "endings": {
+        "good_end": {
+          "type": "safe",
+          "summary": "You protected your gaming account and didn’t share login details.",
+          "pointsReward": 25
+        },
+        "bad_end": {
+          "type": "unsafe",
+          "summary": "Logging in through fake sites lets scammers steal game accounts.",
+          "pointsReward": 5
+        }
+      }
+    },
+    {
+      "id": "friend_impersonation_01",
+      "category": "scam",
+      "channel": "social_media",
+      "title": "The 'Help a Friend' Scam",
+      "startNodeId": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "message": "Hey! I'm locked out of my account. I put your number as a backup. You're gonna get a 6-digit code, can you send it to me real quick?",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Send the code once it arrives",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Ask them a personal question only they would know",
+              "nextNodeId": "n2"
+            },
+            {
+              "id": "o3",
+              "text": "Call your friend on their actual phone",
+              "nextNodeId": "good_end"
+            }
+          ],
+          "redFlagsHere": [
+            "Unexpected request for codes",
+            "Unusual way of talking"
+          ]
+        },
+        {
+          "id": "n2",
+          "message": "I don't have time for games, just send it or I'll lose my account forever!",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Send code to help them",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Block and report the account",
+              "nextNodeId": "good_end"
+            }
+          ],
+          "redFlagsHere": [
+            "Aggressive/Guilt-tripping language"
+          ]
+        }
+      ],
+      "endings": {
+        "good_end": {
+          "type": "safe",
+          "summary": "You recognized the 'Verification Code' scam. Never share codes with anyone.",
+          "pointsReward": 30
+        },
+        "bad_end": {
+          "type": "unsafe",
+          "summary": "The code was for YOUR account. By sharing it, the hacker can now take over your profile.",
+          "pointsReward": 0
+        }
+      }
+    },
+    {
+      "id": "group_harassment_01",
+      "category": "harassment",
+      "channel": "chat",
+      "title": "Toxic Group Chat",
+      "startNodeId": "n1",
+      "nodes": [
+        {
+          "id": "n1",
+          "message": "Someone in the group chat is posting embarrassing, edited photos of another student and tagging them.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Join in with a joke to fit in",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Take screenshots and report to the platform",
+              "nextNodeId": "good_end"
+            },
+            {
+              "id": "o3",
+              "text": "Tell the bully to stop in the main chat",
+              "nextNodeId": "n2"
+            }
+          ],
+          "redFlagsHere": [
+            "Non-consensual sharing of images",
+            "Targeted mocking"
+          ]
+        },
+        {
+          "id": "n2",
+          "message": "The bully starts attacking you now, calling you names for 'ruining the fun'.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Argue back with insults",
+              "nextNodeId": "bad_end"
+            },
+            {
+              "id": "o2",
+              "text": "Mute, Block, and Leave the chat",
+              "nextNodeId": "good_end"
+            }
+          ],
+          "redFlagsHere": [
+            "Deflection",
+            "Increased aggression"
+          ]
+        }
+      ],
+      "endings": {
+        "good_end": {
+          "type": "safe",
+          "summary": "Reporting and disengaging is the best way to handle toxicity without escalating.",
+          "pointsReward": 25
+        },
+        "bad_end": {
+          "type": "unsafe",
+          "summary": "Participating in harassment makes the environment worse and can have consequences for you too.",
+          "pointsReward": 0
+        }
+      }
+    }
+  ],
+  "reports": [
+    {
+      "id": 1767960365681,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T12:06:05.681Z"
+    },
+    {
+      "id": 1767960393485,
+      "userID": 1,
+      "action": "safetyTips",
+      "description": "User reports they performed safetyTips. No further details provided.",
+      "pointsEarned": 10,
+      "timestamp": "2026-01-09T12:06:33.485Z"
+    },
+    {
+      "id": 1767960396220,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T12:06:36.220Z"
+    },
+    {
+      "id": 1767960398528,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T12:06:38.528Z"
+    },
+    {
+      "id": 1767960735645,
+      "userID": 2,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T12:12:15.645Z"
+    },
+    {
+      "id": 1767960956631,
+      "userID": 2,
+      "action": "safetyTips",
+      "description": "User reports they performed safetyTips. No further details provided.",
+      "pointsEarned": 10,
+      "timestamp": "2026-01-09T12:15:56.631Z"
+    },
+    {
+      "id": 1767960959081,
+      "userID": 2,
+      "action": "safetyTips",
+      "description": "User reports they performed safetyTips. No further details provided.",
+      "pointsEarned": 10,
+      "timestamp": "2026-01-09T12:15:59.081Z"
+    },
+    {
+      "id": 1767963856848,
+      "userID": 2,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T13:04:16.848Z"
+    },
+    {
+      "id": 1767963860017,
+      "userID": 2,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T13:04:20.017Z"
+    },
+    {
+      "id": 1767963862449,
+      "userID": 2,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T13:04:22.449Z"
+    },
+    {
+      "id": 1767963864912,
+      "userID": 2,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T13:04:24.911Z"
+    },
+    {
+      "id": 1767963867315,
+      "userID": 2,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T13:04:27.315Z"
+    },
+    {
+      "id": 1767963869740,
+      "userID": 2,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T13:04:29.740Z"
+    },
+    {
+      "id": 1767963877601,
+      "userID": 2,
+      "action": "safetyTips",
+      "description": "User reports they performed safetyTips. No further details provided.",
+      "pointsEarned": 10,
+      "timestamp": "2026-01-09T13:04:37.601Z"
+    },
+    {
+      "id": 1767963880066,
+      "userID": 2,
+      "action": "safetyTips",
+      "description": "User reports they performed safetyTips. No further details provided.",
+      "pointsEarned": 10,
+      "timestamp": "2026-01-09T13:04:40.066Z"
+    },
+    {
+      "id": 1767963882632,
+      "userID": 2,
+      "action": "safetyTips",
+      "description": "User reports they performed safetyTips. No further details provided.",
+      "pointsEarned": 10,
+      "timestamp": "2026-01-09T13:04:42.632Z"
+    },
+    {
+      "id": 1767963883271,
+      "userID": 2,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T13:04:43.271Z"
+    },
+    {
+      "id": 1767963885138,
+      "userID": 2,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T13:04:45.138Z"
+    },
+    {
+      "id": 1767963885719,
+      "userID": 2,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T13:04:45.719Z"
+    },
+    {
+      "id": 1767972600842,
+      "userID": 2,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T15:30:00.842Z"
+    },
+    {
+      "id": 1767978222655,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T17:03:42.655Z"
+    },
+    {
+      "id": 1767978541212,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T17:09:01.212Z"
+    },
+    {
+      "id": 1767978543648,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T17:09:03.648Z"
+    },
+    {
+      "id": 1767978978653,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "User reports they performed reportGood. No further details provided.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T17:16:18.653Z"
+    },
+    {
+      "id": 1767978999075,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T17:16:39.075Z"
+    },
+    {
+      "id": 1767982632723,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "User reports they performed reportPost. No further details provided.",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-09T18:17:12.723Z"
+    },
+    {
+      "id": 1767984040728,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: TikTok\nLink: N/A\nWhy it’s good: This is a video describing how one can approach a kid who is more distant and doesn't talk much in class, and befriend them.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T18:40:40.728Z"
+    },
+    {
+      "id": 1767984111822,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: TikTok\nLink: N/A\nWhy it’s good: This is a bullshit prompt",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T18:41:51.822Z"
+    },
+    {
+      "id": 1767985285988,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: Instagram\nLink: N/A\nWhy it’s good: Nothing to say\n",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T19:01:25.988Z"
+    },
+    {
+      "id": 1767985302267,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: TikTok\nLink: N/A\nWhy it’s good: asdasdafqwefqawfe\n",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T19:01:42.267Z"
+    },
+    {
+      "id": 1767986299028,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: Instagram\nLink: N/A\nWhy it’s good: I saw a video about how to treat my co-workers better and notice when they're down.",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-09T19:18:19.028Z"
+    },
+    {
+      "id": 1768060564752,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "Platform: Instagram\nLink: N/A\nWhat happened: I reported a racist comment on a girl's instagram",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-10T15:56:04.752Z"
+    },
+    {
+      "id": 1768140553570,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: Instagram\nLink: N/A\nWhy it’s good: This is ahelpful video on how to help your friends",
+      "pointsEarned": 20,
+      "timestamp": "2026-01-11T14:09:13.570Z"
+    },
+    {
+      "id": 1768140783509,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "Platform: Instagram\nLink: N/A\nWhat happened: I saw a girl harassing another girl and commenting mean things on her post",
+      "pointsEarned": 50,
+      "timestamp": "2026-01-11T14:13:03.509Z"
+    },
+    {
+      "id": 1768165470529,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "Platform: TikTok\nLink: N/A\nDetails: I reported a group of friends harrasing a girl",
+      "pointsEarned": {
+        "pointsEarned": 0,
+        "monthlyGoalAchieved": false
+      },
+      "timestamp": "2026-01-11T21:04:30.529Z"
+    },
+    {
+      "id": 1768208873299,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: TikTok\nLink: N/A\nDetails: I watched a video about how to help your firends in distress",
+      "pointsEarned": {
+        "pointsEarned": 20,
+        "monthlyGoalAchieved": false,
+        "newTotal": 3860
+      },
+      "timestamp": "2026-01-12T09:07:53.299Z"
+    },
+    {
+      "id": 1768221790812,
+      "userID": 1,
+      "action": "reportGood",
+      "description": "Platform: Instagram\r\nLink: N/A\r\nDetails: Someone commented an encouraging message on my latest post!",
+      "imageUrl": "https://res.cloudinary.com/ddh5ffomn/image/upload/v1768221787/safety_reports/jy8jfsiwi53wawtal7ef.png",
+      "pointsEarned": {
+        "pointsEarned": 20,
+        "monthlyGoalAchieved": false,
+        "newTotal": 3970
+      },
+      "timestamp": "2026-01-12T12:43:10.812Z",
+      "aiReason": "The content shows positive, helpful, and inspiring comments."
+    },
+    {
+      "id": 1768222736539,
+      "userID": 1,
+      "action": "reportPost",
+      "description": "Platform: Instagram\r\nLink: N/A\r\nDetails: These are comments in Hebrew calling for the person who posted the pictures to be gone and calling them a liar",
+      "imageUrl": "https://res.cloudinary.com/ddh5ffomn/image/upload/v1768222734/safety_reports/vf2gf2znupg6gakg4r1i.jpg",
+      "pointsEarned": {
+        "pointsEarned": 30,
+        "monthlyGoalAchieved": false,
+        "newTotal": 4000
+      },
+      "timestamp": "2026-01-12T12:58:56.539Z",
+      "aiReason": "The comments express hostility and call for the user to be removed, indicating harmful content."
     }
   ]
 }

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "eslint . && node server",
-    "dev": "eslint . && nodemon server",
+    "dev": "eslint . && nodemon server.js --ext js,mjs,cjs --ignore '*.json'",
     "lint": "eslint ."
   },
   "keywords": [],
@@ -13,10 +13,17 @@
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.8.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "node-cron": "^4.2.1"
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.12",
+    "openai": "^6.15.0",
+    "resend": "^6.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
