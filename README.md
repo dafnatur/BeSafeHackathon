@@ -1,62 +1,183 @@
-# 🛡️ BeSafe Hackathon | Full-Stack Resource Manager
+# QueenB X AppsFlyer – BeSafe Hackathon 2026
 
-[![Status](https://img.shields.io/badge/Status-Work--In--Progress-orange?style=for-the-badge&logo=gitbook)](https://github.com/roniboden/BeSafeHackathon)
-[![Stack](https://img.shields.io/badge/Stack-MERN-blue?style=for-the-badge&logo=react)](https://github.com/roniboden/BeSafeHackathon)
-[![Event](https://img.shields.io/badge/Hackathon-QueenB%20x%20AppsFlyer-purple?style=for-the-badge)](https://www.queenb.org.il/)
+## 🛡️ Ally – Gamified Internet Safety Platform  
 
-## 📖 Project Overview
-Developed during the **QueenB x AppsFlyer BeSafe Hackathon 2026**, this project is a full-stack library management system. It demonstrates the coordination between a **React (Vite)** frontend and a **Node.js/Express** backend to handle real-time data fetching and state management.
+A full-stack web application developed during a hackathon, designed to promote responsible online behavior through gamification, simulations, and positive reinforcement.
 
-> [!IMPORTANT]
-> **Current Status:** 🚧 This repository is a **Work in Progress**. I am currently refactoring the backend logic and expanding the API capabilities to include more complex data filtering.
+Ally turns digital safety into an engaging experience — rewarding users for reporting harmful content, learning safety practices, and contributing to a healthier online community.
 
----
-
-## 🛠️ Tech Stack & Architecture
-
-### **Frontend**
-* **Framework:** React 18 (Vite)
-* **State Management:** Context API
-* **Styling:** CSS3 (Modular)
-
-### **Backend**
-* **Environment:** Node.js
-* **Framework:** Express.js
-* **Architecture:** RESTful API Design
-
-### **Development Tools**
-* **Version Control:** Git / GitHub
-* **Environment:** Cross-platform `.env` configuration
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b7305d2b-c984-401f-b947-b970044b123d" alt="Ally Dashboard Preview" width="900"/>
+</p>
 
 ---
 
-## 🚀 Key Features & Contributions
-- [x] **API Connectivity:** Established a robust link between the Vite client and Express server.
-- [x] **Dynamic Rendering:** Implemented random data injection to test API response handling.
-- [ ] **(In Progress) Data Persistence:** Transitioning from local JSON data to a scalable database structure.
-- [ ] **(In Progress) UI Refinement:** Enhancing user dashboard for better data visualization.
+## 🚀 Project Overview  
+
+Ally is a gamified web platform where users earn **Safety Points** by completing weekly safety-related activities.  
+
+Instead of focusing on punishment, the platform encourages **proactive and positive digital engagement** through goals, rewards, and visible progress tracking.
+
+Users accumulate points throughout the month and can redeem them in an integrated rewards shop.
+
+The web application is fully responsive and works seamlessly on both **desktop and mobile devices**, ensuring accessibility and engagement across platforms.
 
 ---
 
-## 💻 Getting Started
+## 🎮 Core Features  
 
-### 1. Prerequisites
-* **Node.js** (v20.x or higher)
-* **npm** (v10.x or higher)
+### 📊 Interactive Dashboard  
 
-### 2. Installation
-```bash
-# Clone the repository
-git clone [https://github.com/roniboden/BeSafeHackathon.git](https://github.com/roniboden/BeSafeHackathon.git)
+The main dashboard provides:
 
-# Setup Backend
-cd server
-npm install
-npm run dev
+- 🔥 Engagement / streak indicator  
+- 🏛️ Total Safety Points counter  
+- 🎯 Weekly task progress tracking:
+  - Simulation  
+  - Report Post  
+  - Safety Tips  
+  - Report Good  
+- 🏆 Goal reached indicators  
+- 📈 Monthly progress bar  
 
-# Setup Frontend (in a new terminal)
-cd client
-npm install
-npm run dev
-🤝 Support & Feedback
-This project is part of my journey as a Computer Science student at HUJI. If you have any feedback or questions, feel free to reach out via LinkedIn!
+The interface is designed to feel motivating and game-like, reinforcing consistency and achievement across screen sizes.
+
+---
+
+### 📱 Mobile-Friendly Web App  
+
+- Fully responsive layout  
+- Optimized component rendering for smaller screens  
+- Touch-friendly interactions  
+- Maintains full functionality on mobile browsers  
+
+Users can complete simulations, track progress, and redeem rewards directly from their phones.
+
+---
+
+### 🧪 Safety Simulations  
+
+Interactive scenarios that train users to:
+- Identify misleading or harmful content  
+- Make safer online decisions  
+- Practice responsible digital behavior  
+
+Simulations contribute to weekly and monthly progress.
+
+---
+
+### 📝 Reporting System  
+
+Users can:
+
+- Report harmful posts  
+- Report positive / responsible behavior  
+- Track completion progress  
+
+All actions are connected to the points system and validated through the backend.
+
+---
+
+### 💡 Safety Tips & Micro-Learning  
+
+Short educational tips and quiz-style interactions that:
+- Reinforce digital literacy  
+- Encourage recurring engagement  
+- Contribute to weekly goals  
+
+---
+
+### 🛍️ Rewards Shop  
+
+A built-in shop allows users to redeem their accumulated **Safety Points** for rewards.
+
+Features include:
+- Points-based purchasing system  
+- Monthly earning logic  
+- Virtual currency tracking  
+- Real-time balance updates  
+
+This internal economy strengthens motivation and long-term engagement.
+
+---
+
+## 🧠 Gamification Logic  
+
+The system includes:
+
+- Weekly targets  
+- Monthly accumulation tracking  
+- Real-time progress updates  
+- Goal completion states  
+- Points economy  
+- Reward redemption mechanism  
+
+The platform applies behavioral design principles to encourage sustained positive habits.
+
+---
+
+## 🔐 Authentication & Security  
+
+- User login & registration  
+- Token-based authentication (JWT)  
+- Secure API communication  
+- Protected routes  
+
+---
+
+## 🛠 Tech Stack  
+
+### Frontend  
+- React  
+- JavaScript  
+- CSS  
+- Responsive design  
+
+### Backend  
+- Node.js  
+- Express  
+- REST API  
+
+---
+
+## 🏗 Architecture Highlights  
+
+- Modular UI components (TaskCard, ScoreCenter, Modals, Shop, etc.)  
+- API abstraction layer  
+- State-driven dashboard rendering  
+- Separation between weekly and monthly logic  
+- Centralized points management system  
+
+---
+
+## 🎯 Purpose & Impact  
+
+Ally explores how gamification and behavioral design can:
+
+- Encourage responsible digital participation  
+- Increase online accountability  
+- Promote positive reinforcement instead of punishment  
+- Make safety education engaging and measurable  
+
+The project demonstrates how product design, psychology, and technology can work together to improve digital environments.
+
+---
+
+## 🏆 Hackathon Context  
+
+Developed during the QueenB X AppsFlyer Hackathon 2026, focused on improving online safety and community awareness.  
+
+Built under time constraints as a functional MVP, prioritizing rapid iteration, working backend integration, and a complete user experience flow.
+
+---
+
+## 👥 Team
+
+This project was developed by:
+
+- **Dafna Tur**
+- **Roni Bodenstein**
+- **Adar Gerbi**
+
+Built collaboratively during the QueenB X AppsFlyer Hackathon 2026.
+
